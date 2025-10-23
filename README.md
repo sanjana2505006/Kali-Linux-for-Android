@@ -8,9 +8,6 @@
 
 ---
 
-> **Before you paste (optional but recommended):**  
-> Create `assets/gifs/` and add demo GIFs & logos so README images load reliably. Example:
->
 > ```bash
 > mkdir -p assets/gifs
 > wget -O assets/gifs/nmap-scan.gif "https://upload.wikimedia.org/wikipedia/commons/3/3b/Terminal_demo.gif"
