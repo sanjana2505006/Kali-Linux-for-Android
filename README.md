@@ -73,17 +73,17 @@ It’s portable, rootless, and visually documented with live demos.
 pkg update && pkg upgrade -y
 pkg install wget curl proot -y
 
-# Download & run Kali NetHunter installer
-wget -O install-nethunter-termux https://offs.ec/2MceZWr
+# Download & run Kali NetHunter installer (pinned revision)
+wget -O install-nethunter-termux https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-rootless/-/raw/07d66e8b51eee8d0e19ea7b4a8050dcbf3e08391/install-nethunter-termux
 chmod +x install-nethunter-termux
 ./install-nethunter-termux
 
 # Optional extras (LinuxDroid)
-wget https://raw.githubusercontent.com/AryanVBW/LinuxDroid/main/Scripts/menu.sh && chmod +x menu.sh
+wget https://raw.githubusercontent.com/AryanVBW/LinuxDroid/2b2ff0f3d0d340ca13905177f545793da2b8101c/Scripts/menu.sh && chmod +x menu.sh
 
 # Optional bash presets
 cp ~/.bashrc ~/.bashrc.backup || true
-wget https://raw.githubusercontent.com/AryanVBW/LinuxDroid/main/Scripts/default.bashrc -O ~/.bashrc
+wget https://raw.githubusercontent.com/AryanVBW/LinuxDroid/4faaad1f16cce15776061f2a3226160dc253bbef/Scripts/default.bashrc -O ~/.bashrc
 
 # Start GUI (set KeX password first)
 nethunter kex passwd
