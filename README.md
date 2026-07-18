@@ -55,7 +55,7 @@ It’s portable, rootless, and visually documented with live demos.
 - Android 7.0+  
 - Termux (from F-Droid)  
 - `termux-setup-storage` permission granted  
-- Disk: ~3-8 GB free space  
+- Disk space: ~3–5 GB for Option A (NetHunter), ~2–3 GB for Option B (Debian)  
 - (Optional) Root access for Wi-Fi injection or OTG tools  
 
 > 💡 Always inspect scripts before running:  
@@ -85,12 +85,15 @@ wget https://raw.githubusercontent.com/AryanVBW/LinuxDroid/main/Scripts/menu.sh 
 cp ~/.bashrc ~/.bashrc.backup || true
 wget https://raw.githubusercontent.com/AryanVBW/LinuxDroid/main/Scripts/default.bashrc -O ~/.bashrc
 
-# Start GUI
+# Start GUI (set KeX password first)
+nethunter kex passwd
 nethunter kex &
 ./menu.sh
 ```
 
 ### Option B: Debian via proot-distro
+
+For NetHunter, use Option A. This path is just a Debian container.
 
 ```bash
 pkg install proot-distro
@@ -103,9 +106,5 @@ Inside Debian:
 
 ```bash
 apt update && apt upgrade -y
-apt install kali-tools-top10 -y
-wget -O install-nethunter-termux https://offs.ec/2MceZWr
-chmod +x install-nethunter-termux
-./install-nethunter-termux
-nethunter kex &
+# install whatever you need, e.g. apt install nmap
 ```
