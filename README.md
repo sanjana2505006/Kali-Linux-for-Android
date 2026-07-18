@@ -1,60 +1,46 @@
 # Kali-Linux-for-Android — Kali Magic 🎩🔐
 
-> Transform your Android device into a **portable cybersecurity playground** — run Kali / NetHunter tools on Android (Termux / LinuxDroid integration). 🚀💻📱
+> Transform your Android device into a **portable cybersecurity playground** — run Kali / NetHunter tools on Android (Termux / LinuxDroid integration).
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Releases](https://img.shields.io/github/v/release/AryanVBW/ParrotSecurityOsForAndroid)](https://github.com/AryanVBW/ParrotSecurityOsForAndroid/releases)
-[![Downloads](https://img.shields.io/github/downloads/AryanVBW/ParrotSecurityOsForAndroid/total)]()
+[![Releases](https://img.shields.io/github/v/release/AryanVBW/Kali-Linux-for-Android)](https://github.com/AryanVBW/Kali-Linux-for-Android/releases)
+[![Downloads](https://img.shields.io/github/downloads/AryanVBW/Kali-Linux-for-Android/total)](https://github.com/AryanVBW/Kali-Linux-for-Android/releases)
 
----
-
-> ```bash
-> mkdir -p assets/gifs
-> wget -O assets/gifs/nmap-scan.gif "https://upload.wikimedia.org/wikipedia/commons/3/3b/Terminal_demo.gif"
-> wget -O assets/gifs/metasploit-demo.gif "https://upload.wikimedia.org/wikipedia/commons/5/5f/Metasploit_Console.gif"
-> wget -O assets/gifs/wireshark-capture.gif "https://upload.wikimedia.org/wikipedia/commons/6/6d/Wireshark_capture.gif"
-> wget -O assets/gifs/linuxdroid-install.gif "https://upload.wikimedia.org/wikipedia/commons/1/1a/Installer_demo.gif"
-> wget -O assets/gifs/kali-logo.png "https://upload.wikimedia.org/wikipedia/commons/2/2b/Kali-dragon-icon.png"
-> wget -O assets/gifs/parrot-logo.png "https://upload.wikimedia.org/wikipedia/commons/8/8b/Parrot-logo.png"
-> wget -O assets/gifs/ubuntu-logo.png "https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo-ubuntu_cof-orange-hex.svg"
-> wget -O assets/gifs/debian-logo.png "https://upload.wikimedia.org/wikipedia/commons/0/0d/Debian-logo.svg"
-> git add assets/gifs/*
-> git commit -m "Add README demo assets"
-> git push origin main
-> ```
+<p align="center">
+  <a href="https://github.com/AryanVBW/LinuxDroid">
+    <img src="https://github.com/AryanVBW/ParrotSecurityOsForAndroid/releases/download/Gif/visithere.gif" alt="Visit LinuxDroid" width="520">
+  </a>
+</p>
 
 ---
 
 ## 📖 Table of Contents
 
-- [About](#about)  
-- [Supported Operating Systems](#supported-operating-systems)  
-- [Features](#features)  
-- [Prerequisites](#prerequisites)  
-- [Quick Install](#quick-install)  
-- [Manual Installation](#manual-installation)  
-- [Kali NetHunter (Rootless)](#kali-nethunter-rootless)  
-- [Visual Demos](#visual-demos)  
-  - [Nmap](#nmap)  
-  - [Metasploit](#metasploit)  
-  - [Wireshark](#wireshark)  
-  - [Installer Walkthrough](#installer-walkthrough)  
-- [Usage Examples](#usage-examples)  
-- [Installation Link](#installation-link)  
-- [Security & Legal Notice](#security--legal-notice)  
-- [Contributing & Support](#contributing--support)  
-- [Credits & License](#credits--license)
+- [About](#about)
+- [Supported Operating Systems](#supported-operating-systems)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Quick Install](#quick-install)
+- [Manual Installation](#manual-installation)
+- [Kali NetHunter (Rootless)](#kali-nethunter-rootless)
+- [Visual Demos](#visual-demos)
+  - [Nmap](#nmap)
+  - [Metasploit](#metasploit)
+  - [Wireshark](#wireshark)
+  - [Installer Walkthrough](#installer-walkthrough)
+- [Usage Examples](#usage-examples)
+- [Installation Link](#installation-link)
+- [Security and Legal Notice](#security-and-legal-notice)
+- [Contributing and Support](#contributing-and-support)
+- [Credits and License](#credits-and-license)
 
 ---
 
 ## 🧠 About
 
-**Kali Magic** lets you experience **Kali Linux / Parrot OS / NetHunter** tools right on Android — perfect for **students, researchers, and ethical hackers** learning on the go.  
+**Kali Magic** lets you experience **Kali Linux / Parrot OS / NetHunter** tools right on Android — perfect for **students, researchers, and ethical hackers** learning on the go.
 
-Run full penetration-testing environments inside **Termux + LinuxDroid**.  
-It’s portable, rootless, and visually documented with live demos.
-
-[![Visit LinuxDroid](assets/gifs/linuxdroid-install.gif)](https://github.com/AryanVBW/LinuxDroid)
+Run full penetration-testing environments inside **Termux + LinuxDroid**. It is portable, rootless, and documented with clear install paths and usage examples.
 
 ---
 
@@ -62,126 +48,224 @@ It’s portable, rootless, and visually documented with live demos.
 
 | OS | Version | Description | Logo |
 |----|---------|-------------|------|
-| **Kali Linux** | Rolling | Advanced penetration testing & security distro. | ![Kali Logo](assets/gifs/kali-logo.png) |
-| **Parrot Security OS** | Rolling | Forensics, pen-testing, privacy & dev tools. | ![Parrot Logo](assets/gifs/parrot-logo.png) |
-| **Ubuntu** | 20.04+ | General-purpose Linux for dev & scripting. | ![Ubuntu Logo](assets/gifs/ubuntu-logo.png) |
-| **Debian** | 11+ | Stable, server-ready Linux distribution. | ![Debian Logo](assets/gifs/debian-logo.png) |
+| **Kali Linux** | Rolling | Advanced penetration testing and security distro. | <img src="assets/gifs/kali-logo.svg" alt="Kali Logo" width="48"> |
+| **Parrot Security OS** | Rolling | Forensics, pen-testing, privacy, and developer tools. | <img src="assets/gifs/parrot-logo.svg" alt="Parrot Logo" width="48"> |
+| **Ubuntu** | 20.04+ | General-purpose Linux for development and scripting. | <img src="assets/gifs/ubuntu-logo.svg" alt="Ubuntu Logo" width="48"> |
+| **Debian** | 11+ | Stable, server-ready Linux distribution. | <img src="assets/gifs/debian-logo.svg" alt="Debian Logo" width="48"> |
 
 ---
 
 ## 🌟 Features
 
-- Mobile-optimized environment for Kali / NetHunter tools.  
-- Run powerful pentest tools inside Termux/proot (rootless).  
-- Quick installer + visual setup walkthrough.  
-- Lightweight GIF demos and prebuilt commands.  
-- Safe for educational / ethical security labs.
+- Mobile-optimized environment for Kali / NetHunter tools
+- Run powerful pentest tools inside Termux / proot (rootless)
+- Quick installer with two clear install paths
+- Copy-paste-ready commands for common tools
+- Safe for educational and ethical security labs
 
 ---
 
 ## ⚙️ Prerequisites
 
-- Android 7.0+  
-- Termux (from F-Droid)  
-- `termux-setup-storage` permission granted  
-- Disk: ~3-8 GB free space  
-- (Optional) Root access for Wi-Fi injection or OTG tools  
+- Android 7.0+
+- [Termux](https://f-droid.org/packages/com.termux/) (from F-Droid)
+- `termux-setup-storage` permission granted
+- Disk: ~3–8 GB free space
+- (Optional) Root access for Wi-Fi injection or OTG tools
 
-> 💡 Always inspect scripts before running:  
+> Always inspect scripts before running:
 > ```bash
-> cat install.sh
+> cat install-nethunter-termux
 > ```
 
 ---
 
 ## 🚀 Quick Install
 
+Choose **one** path below — do not run both.
+
+### Option A: Direct Termux (NetHunter Rootless)
+
+Best for a quick Kali NetHunter rootless setup inside Termux.
+
 ```bash
 pkg update && pkg upgrade -y
 pkg install wget curl proot -y
 
-# Download & run Kali NetHunter installer
+# Download and run Kali NetHunter installer
 wget -O install-nethunter-termux https://offs.ec/2MceZWr
 chmod +x install-nethunter-termux
 ./install-nethunter-termux
 
-# Optional extras (LinuxDroid)
-wget https://raw.githubusercontent.com/AryanVBW/LinuxDroid/main/Scripts/menu.sh && chmod +x menu.sh
+# Optional: LinuxDroid menu helpers
+wget https://raw.githubusercontent.com/AryanVBW/LinuxDroid/main/Scripts/menu.sh
+chmod +x menu.sh
 
-# Optional bash presets
-cp ~/.bashrc ~/.bashrc.backup || true
+# Optional: bash presets
+cp ~/.bashrc ~/.bashrc.backup 2>/dev/null || true
 wget https://raw.githubusercontent.com/AryanVBW/LinuxDroid/main/Scripts/default.bashrc -O ~/.bashrc
 
-# Start GUI
+# Start GUI (after install completes)
 nethunter kex &
 ./menu.sh
+```
 
-pkg install proot-distro
+### Option B: Debian via proot-distro
+
+Best if you want a full Debian container, then install Kali tools inside it.
+
+```bash
+pkg update && pkg upgrade -y
+pkg install wget curl proot-distro -y
+
 proot-distro list
 proot-distro install debian
 proot-distro login debian
+```
 
-# Inside Debian
+Inside the Debian container:
+
+```bash
 apt update && apt upgrade -y
 apt install kali-tools-top10 -y
+
+# Optional: NetHunter-style tooling inside the container
 wget -O install-nethunter-termux https://offs.ec/2MceZWr
 chmod +x install-nethunter-termux
 ./install-nethunter-termux
-nethunter kex &
-nmap -A 192.168.1.1/24
+```
+
+---
+
+## 🛠️ Manual Installation
+
+1. Install Termux from F-Droid (not Play Store).
+2. Open Termux and grant storage access:
+   ```bash
+   termux-setup-storage
+   ```
+3. Follow **Option A** or **Option B** in [Quick Install](#quick-install).
+4. For a multi-distro Android Linux experience, use [LinuxDroid](https://github.com/AryanVBW/LinuxDroid).
+
+---
+
+## 🐉 Kali NetHunter (Rootless)
+
+Kali NetHunter Rootless runs on stock, unrooted Android via Termux. It is based on Kali Linux and provides a mobile penetration-testing platform for learning and research.
+
+With NetHunter Rootless you can:
+
+- Practice ethical hacking and security research on Android
+- Use common Kali tools in a portable environment
+- Learn without requiring a rooted device
+
+After installation:
+
+```bash
+nethunter          # enter NetHunter CLI
+nethunter kex &    # start KeX GUI session (if configured)
+```
+
+Official guide: [Kali NetHunter Rootless](https://www.kali.org/docs/nethunter/nethunter-rootless/)
+
+---
+
+## 🎬 Visual Demos
+
+### Nmap
+
+Scan a local subnet (replace with a network you own or have permission to test):
+
+```bash
+nmap -sS 192.168.1.0/24
+nmap -A 192.168.1.1
+```
+
+### Metasploit
+
+```bash
 msfconsole
-use exploit/android/browser/webview_addjavascriptinterface
-# List installed tools
+```
+
+### Wireshark
+
+On devices with GUI / KeX support:
+
+```bash
+wireshark
+# or capture from CLI
+tshark -i any -c 50
+```
+
+### Installer Walkthrough
+
+1. Update Termux packages
+2. Run the NetHunter installer (**Option A**) or set up Debian (**Option B**)
+3. Launch `nethunter` / `menu.sh`
+4. Install tools as needed (`nmap`, `metasploit-framework`, etc.)
+
+<p align="center">
+  <a href="https://github.com/AryanVBW/LinuxDroid">
+    <img src="https://github.com/AryanVBW/ParrotSecurityOsForAndroid/releases/download/Gif/visithere.gif" alt="Installer walkthrough" width="480">
+  </a>
+</p>
+
+---
+
+## 💡 Usage Examples
+
+```bash
+# List tools (Debian / Kali container)
 ls /usr/share/
+
+# Network discovery (authorized networks only)
+nmap -sn 192.168.1.0/24
 
 # Start Metasploit
 msfconsole
 
-# Network Scan
-nmap -sS 192.168.1.0/24
-mkdir -p scripts
-cat > scripts/optimize_gifs.sh <<'EOF'
-#!/usr/bin/env bash
-# optimize_gifs.sh
-# Example: ./optimize_gifs.sh 640 15
-
-set -e
-MAX_WIDTH="${1:-640}"
-FPS="${2:-15}"
-SRC_DIR="assets/gifs"
-OUT_DIR="${SRC_DIR}/optimized"
-
-mkdir -p "$OUT_DIR"
-
-if ! command -v ffmpeg >/dev/null 2>&1; then
-  pkg install -y ffmpeg || apt install -y ffmpeg
-fi
-
-if ! command -v gifsicle >/dev/null 2>&1; then
-  pkg install -y gifsicle || apt install -y gifsicle || true
-fi
-
-for gif in "$SRC_DIR"/*.gif; do
-  fname="$(basename "$gif")"
-  tmp="${OUT_DIR}/tmp-${fname}"
-  out="${OUT_DIR}/${fname%.*}-opt.gif"
-
-  ffmpeg -y -i "$gif" -vf "scale='min(${MAX_WIDTH},iw)':'-2',fps=${FPS}" "$tmp"
-  if command -v gifsicle >/dev/null 2>&1; then
-    gifsicle -O3 "$tmp" -o "$out"
-  else
-    mv "$tmp" "$out"
-  fi
-  echo "Optimized: $out"
-done
-EOF
-
-chmod +x scripts/optimize_gifs.sh
-./scripts/optimize_gifs.sh 640 15
-git add assets/gifs/optimized/*
-git commit -m "Add optimized README GIFs"
-git push origin main
+# LinuxDroid helper menu (if installed)
+./menu.sh
+```
 
 ---
-  
 
+## 🔗 Installation Link
+
+Primary project for multi-OS Android Linux installs:
+
+**[LinuxDroid](https://github.com/AryanVBW/LinuxDroid)** — install Kali, Parrot, Ubuntu, Debian, and more on Android.
+
+This repository focuses on the Kali / NetHunter experience. For the full LinuxDroid installer and OS list, use the link above.
+
+---
+
+## ⚠️ Security and Legal Notice
+
+Use these tools **only** on systems and networks you own or have explicit permission to test.
+
+Unauthorized access, scanning, or exploitation of systems is illegal. The authors and contributors are not responsible for misuse. This project is intended for education, research, and ethical security practice.
+
+---
+
+## 🤝 Contributing and Support
+
+- Report issues, suggest enhancements, or open pull requests
+- Keep documentation clear and commands copy-paste ready
+- For maintainer GIF optimization:
+
+```bash
+./scripts/optimize_gifs.sh 640 15
+```
+
+See [`scripts/optimize_gifs.sh`](scripts/optimize_gifs.sh) for details.
+
+---
+
+## 📜 Credits and License
+
+- [Kali Linux / Offensive Security](https://www.kali.org/)
+- [LinuxDroid](https://github.com/AryanVBW/LinuxDroid) by [AryanVBW](https://github.com/AryanVBW)
+- Community contributors
+
+Licensed under the terms of this repository. See the project license for details.
